@@ -116,13 +116,6 @@ export default function App() {
             </button>
 
             <button
-              onClick={() => scrollToSection("experience")}
-              className="hover:text-white transition-colors"
-            >
-              Experience Tree
-            </button>
-
-            <button
               onClick={() => scrollToSection("contact")}
               className="hover:text-white transition-colors"
             >
