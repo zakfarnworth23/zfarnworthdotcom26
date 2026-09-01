@@ -77,7 +77,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-[#1d1d1f]">
+    <div className="min-h-screen bg-white text-apple-text font-sans">
       {/* NAVIGATION */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 h-11 text-xs transition-colors duration-300 ${
@@ -90,7 +90,7 @@ export default function App() {
           <button
             onClick={() => navigateTo("home")}
             className={`transition-colors font-medium focus:outline-none ${
-              mobileMenuOpen ? "text-[#1d1d1f]" : "text-white hover:text-gray-300"
+              mobileMenuOpen ? "text-apple-text" : "text-white hover:text-gray-300"
             }`}
           >
             Zak Farnworth
@@ -145,7 +145,7 @@ export default function App() {
           <button
             onClick={() => setMobileMenuOpen((open) => !open)}
             className={`md:hidden focus:outline-none w-7 h-7 flex items-center justify-center relative z-50 ${
-              mobileMenuOpen ? "text-[#1d1d1f]" : "text-gray-300 hover:text-white"
+              mobileMenuOpen ? "text-apple-text" : "text-gray-300 hover:text-white"
             }`}
             aria-label="Toggle mobile menu"
             aria-expanded={mobileMenuOpen}
@@ -175,34 +175,34 @@ export default function App() {
             <div className="space-y-6">
               <button
                 onClick={() => navigateTo("home")}
-                className="text-2xl font-semibold text-[#1d1d1f] hover:text-gray-600 block w-full text-left pb-4 border-b border-gray-100"
+                className="text-2xl font-semibold text-apple-text hover:text-gray-600 block w-full text-left pb-4 border-b border-gray-100"
               >
                 Overview
               </button>
 
               <button
                 onClick={() => navigateTo("about")}
-                className="text-2xl font-semibold text-[#1d1d1f] hover:text-gray-600 block w-full text-left pb-4 border-b border-gray-100"
+                className="text-2xl font-semibold text-apple-text hover:text-gray-600 block w-full text-left pb-4 border-b border-gray-100"
               >
                 About
               </button>
 
               <button
                 onClick={() => scrollToSection("experience")}
-                className="text-2xl font-semibold text-[#1d1d1f] hover:text-gray-600 block w-full text-left pb-4 border-b border-gray-100"
+                className="text-2xl font-semibold text-apple-text hover:text-gray-600 block w-full text-left pb-4 border-b border-gray-100"
               >
                 Experience Tree
               </button>
 
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-2xl font-semibold text-[#1d1d1f] hover:text-gray-600 block w-full text-left pb-4 border-b border-gray-100"
+                className="text-2xl font-semibold text-apple-text hover:text-gray-600 block w-full text-left pb-4 border-b border-gray-100"
               >
                 Connect
               </button>
             </div>
 
-            <div className="text-[11px] text-gray-400 border-t border-gray-100 pt-4">
+            <div className="text-[11px] text-apple-subtext border-t border-gray-100 pt-4">
               Zak Farnworth • Personal Workspace
             </div>
           </div>
@@ -211,7 +211,7 @@ export default function App() {
 
       {/* SUB HEADER */}
       <div className="pt-11">
-        <div className="bg-[#1d1d1f] text-xs text-[#a1a1a6] py-2.5">
+        <div className="bg-apple-darkBg text-xs text-[#a1a1a6] py-2.5">
           <div className="max-w-[1024px] mx-auto px-4 flex justify-between items-center">
             <span className="font-medium text-white">
               Office of Zak Farnworth
@@ -233,9 +233,21 @@ export default function App() {
         {/* HOME PAGE */}
         {activeTab === "home" && (
           <main>
-            <section className="bg-black text-white pt-20 pb-24 px-4 text-center border-b border-white/10">
-              <div className="max-w-[800px] mx-auto">
-                <p className="text-xs font-semibold tracking-[0.2em] text-[#86868b] uppercase mb-4">
+            {/* HERO SECTION WITH FADED DESKTOP BACKGROUND */}
+            <section className="relative overflow-hidden bg-black text-white pt-20 pb-24 px-4 text-center border-b border-white/10">
+              {/* Desktop-only Faded Watermark */}
+              <div 
+                aria-hidden="true" 
+                className="hidden md:flex absolute inset-0 items-center justify-center pointer-events-none select-none z-0"
+              >
+                <span className="text-[11vw] font-extrabold tracking-tighter text-white/[0.035] whitespace-nowrap uppercase">
+                  Zak Farnworth
+                </span>
+              </div>
+
+              {/* Foreground Hero Content */}
+              <div className="relative z-10 max-w-[800px] mx-auto">
+                <p className="text-xs font-semibold tracking-[0.2em] text-apple-subtext uppercase mb-4">
                   Systems &amp; Engineering Portal
                 </p>
 
@@ -253,7 +265,7 @@ export default function App() {
                   </button>
                 </div>
 
-                <p className="text-base sm:text-lg text-[#86868b] max-w-[600px] mx-auto font-normal leading-relaxed mt-6">
+                <p className="text-base sm:text-lg text-apple-subtext max-w-[600px] mx-auto font-normal leading-relaxed mt-6">
                   Focused on modern cloud architecture, automated identity
                   federation, and resilient homelab engineering.
                 </p>
@@ -263,15 +275,15 @@ export default function App() {
             <section className="py-16 sm:py-24 px-6 max-w-[980px] mx-auto border-b border-gray-200">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
                 <div className="md:col-span-7 space-y-4 text-left">
-                  <span className="text-xs font-semibold uppercase tracking-widest text-[#86868b]">
+                  <span className="text-xs font-semibold uppercase tracking-widest text-apple-subtext">
                     Welcome
                   </span>
 
-                  <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-[#1d1d1f] leading-tight">
+                  <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-apple-text leading-tight">
                     Welcome to my website.
                   </h2>
 
-                  <p className="text-base sm:text-lg text-[#86868b] leading-relaxed max-w-[500px]">
+                  <p className="text-base sm:text-lg text-apple-subtext leading-relaxed max-w-[500px]">
                     I'm a workplace Engineer at Capgemini in EUS UK (End User
                     Services), where I focus on our Client's Microsoft 365
                     implementation, design, and support, with the integration
@@ -281,7 +293,7 @@ export default function App() {
                   <div className="pt-3">
                     <button
                       onClick={() => navigateTo("about")}
-                      className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white bg-[#0071e3] hover:bg-[#0077ed] active:bg-[#0062c4] rounded-full transition-all duration-200 shadow-sm"
+                      className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white bg-apple-blue hover:bg-apple-blueHover rounded-full transition-all duration-200 shadow-sm"
                     >
                       Read about me
                       <ChevronRight className="w-4 h-4 ml-1" />
@@ -306,15 +318,15 @@ export default function App() {
               className="py-20 px-4 max-w-[840px] mx-auto scroll-mt-16"
             >
               <div className="text-center mb-14">
-                <span className="text-xs font-semibold text-[#0066cc] uppercase tracking-wider">
+                <span className="text-xs font-semibold text-apple-blue uppercase tracking-wider">
                   Career Progression
                 </span>
 
-                <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-[#1d1d1f] mt-1">
+                <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-apple-text mt-1">
                   Experience &amp; Roles
                 </h2>
 
-                <p className="text-sm text-[#86868b] mt-2">
+                <p className="text-sm text-apple-subtext mt-2">
                   Timeline of technical roles, responsibilities, and
                   enterprise focus areas.
                 </p>
@@ -323,26 +335,26 @@ export default function App() {
               <div className="relative border-l-2 border-gray-300 ml-4 sm:ml-32 space-y-12">
                 {workExperience.map((exp, idx) => (
                   <div key={idx} className="relative pl-8 sm:pl-10 group">
-                    <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white border-4 border-[#0066cc] group-hover:scale-125 transition-transform" />
+                    <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white border-4 border-apple-blue group-hover:scale-125 transition-transform" />
 
                     <div className="hidden sm:block absolute -left-36 top-1 text-right w-28">
-                      <span className="text-xs font-semibold font-mono text-[#86868b]">
+                      <span className="text-xs font-semibold font-mono text-apple-subtext">
                         {exp.period}
                       </span>
                     </div>
 
                     <div className="bg-white rounded-[20px] p-6 sm:p-8 border border-black/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all">
                       <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                        <span className="sm:hidden text-xs font-mono text-[#86868b] font-medium">
+                        <span className="sm:hidden text-xs font-mono text-apple-subtext font-medium">
                           {exp.period}
                         </span>
 
-                        <span className="text-[10px] uppercase font-semibold tracking-wider px-2.5 py-0.5 rounded-full bg-blue-50 text-[#0066cc]">
+                        <span className="text-[10px] uppercase font-semibold tracking-wider px-2.5 py-0.5 rounded-full bg-blue-50 text-apple-blue">
                           {exp.status}
                         </span>
                       </div>
 
-                      <h3 className="text-xl sm:text-2xl font-semibold text-[#1d1d1f]">
+                      <h3 className="text-xl sm:text-2xl font-semibold text-apple-text">
                         {exp.role}
                       </h3>
 
@@ -351,7 +363,7 @@ export default function App() {
                         {exp.company}
                       </div>
 
-                      <p className="text-xs sm:text-sm text-[#86868b] leading-relaxed mb-5">
+                      <p className="text-xs sm:text-sm text-apple-subtext leading-relaxed mb-5">
                         {exp.description}
                       </p>
 
@@ -361,7 +373,7 @@ export default function App() {
                             key={hIdx}
                             className="flex items-center text-xs text-[#515154]"
                           >
-                            <CheckCircle2 className="w-3.5 h-3.5 text-[#0066cc] mr-2 flex-shrink-0" />
+                            <CheckCircle2 className="w-3.5 h-3.5 text-apple-blue mr-2 flex-shrink-0" />
                             <span>{item}</span>
                           </div>
                         ))}
@@ -377,15 +389,15 @@ export default function App() {
               className="py-20 px-4 max-w-[980px] mx-auto border-t border-gray-200 scroll-mt-16"
             >
               <div className="text-center mb-12">
-                <span className="text-xs font-semibold text-[#0066cc] uppercase tracking-wider">
+                <span className="text-xs font-semibold text-apple-blue uppercase tracking-wider">
                   Get In Touch
                 </span>
 
-                <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-[#1d1d1f] mt-1">
+                <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-apple-text mt-1">
                   Connect &amp; Reach Out
                 </h2>
 
-                <p className="text-xs sm:text-sm text-[#86868b] mt-2 max-w-md mx-auto">
+                <p className="text-xs sm:text-sm text-apple-subtext mt-2 max-w-md mx-auto">
                   Direct channels for professional inquiries, engineering
                   discussions, or networking.
                 </p>
@@ -398,20 +410,20 @@ export default function App() {
                   aria-label="Send an email to Zak Farnworth"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-[#0066cc] mb-6 group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-apple-blue mb-6 group-hover:scale-110 transition-transform">
                       <Mail className="w-6 h-6" />
                     </div>
 
-                    <span className="text-[11px] font-semibold text-[#86868b] uppercase tracking-wider block mb-1">
+                    <span className="text-[11px] font-semibold text-apple-subtext uppercase tracking-wider block mb-1">
                       Direct Email
                     </span>
 
-                    <h3 className="text-base font-semibold text-[#1d1d1f] group-hover:text-[#0066cc] transition-colors break-words">
+                    <h3 className="text-base font-semibold text-apple-text group-hover:text-apple-blue transition-colors break-words">
                       zak@farnworth.org.uk
                     </h3>
                   </div>
 
-                  <div className="mt-8 flex items-center text-xs font-medium text-[#0066cc] group-hover:translate-x-1 transition-transform">
+                  <div className="mt-8 flex items-center text-xs font-medium text-apple-blue group-hover:translate-x-1 transition-transform">
                     Send Email
                     <ChevronRight className="w-3.5 h-3.5 ml-1" />
                   </div>
@@ -425,20 +437,20 @@ export default function App() {
                   aria-label="Visit Zak Farnworth's LinkedIn Profile"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-[#0066cc] mb-6 group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-apple-blue mb-6 group-hover:scale-110 transition-transform">
                       <Linkedin className="w-6 h-6" />
                     </div>
 
-                    <span className="text-[11px] font-semibold text-[#86868b] uppercase tracking-wider block mb-1">
+                    <span className="text-[11px] font-semibold text-apple-subtext uppercase tracking-wider block mb-1">
                       LinkedIn
                     </span>
 
-                    <h3 className="text-base font-semibold text-[#1d1d1f] group-hover:text-[#0066cc] transition-colors">
+                    <h3 className="text-base font-semibold text-apple-text group-hover:text-apple-blue transition-colors">
                       Professional Network
                     </h3>
                   </div>
 
-                  <div className="mt-8 flex items-center text-xs font-medium text-[#0066cc] group-hover:translate-x-1 transition-transform">
+                  <div className="mt-8 flex items-center text-xs font-medium text-apple-blue group-hover:translate-x-1 transition-transform">
                     View Profile
                     <ExternalLink className="w-3.5 h-3.5 ml-1" />
                   </div>
@@ -452,20 +464,20 @@ export default function App() {
                   aria-label="Visit Zak Farnworth's GitHub Profile"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-[#0066cc] mb-6 group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-apple-blue mb-6 group-hover:scale-110 transition-transform">
                       <Github className="w-6 h-6" />
                     </div>
 
-                    <span className="text-[11px] font-semibold text-[#86868b] uppercase tracking-wider block mb-1">
+                    <span className="text-[11px] font-semibold text-apple-subtext uppercase tracking-wider block mb-1">
                       GitHub
                     </span>
 
-                    <h3 className="text-base font-semibold text-[#1d1d1f] group-hover:text-[#0066cc] transition-colors">
+                    <h3 className="text-base font-semibold text-apple-text group-hover:text-apple-blue transition-colors">
                       Code Repositories
                     </h3>
                   </div>
 
-                  <div className="mt-8 flex items-center text-xs font-medium text-[#0066cc] group-hover:translate-x-1 transition-transform">
+                  <div className="mt-8 flex items-center text-xs font-medium text-apple-blue group-hover:translate-x-1 transition-transform">
                     Explore Code
                     <ExternalLink className="w-3.5 h-3.5 ml-1" />
                   </div>
@@ -476,95 +488,90 @@ export default function App() {
         )}
 
         {/* ABOUT PAGE */}
-{activeTab === "about" && (
-  <main className="bg-white pb-16">
-    {/* FULL WIDTH LIGHT GRAY TOP SECTION */}
-    <section className="bg-apple-bg">
-      <div className="max-w-[980px] mx-auto px-6 pt-5">
-        {/* TITLE ABOVE THE BORDER LINE */}
-        <div className="pb-2">
-          <span className="text-xs sm:text-sm font-semibold text-apple-text">
-            About
-          </span>
-        </div>
+        {activeTab === "about" && (
+          <main className="bg-white pb-16">
+            <section className="bg-apple-bg">
+              <div className="max-w-[980px] mx-auto px-6 pt-5">
+                <div className="pb-2">
+                  <span className="text-xs sm:text-sm font-semibold text-apple-text">
+                    About
+                  </span>
+                </div>
 
-        {/* HORIZONTAL BORDER LINE */}
-        <div className="border-t border-apple-border pt-8 sm:pt-10 mb-8 sm:mb-12">
-          <div className="grid grid-cols-1 md:grid-cols-12 md:gap-8 items-end">
-            <div className="md:col-span-6 pb-8 sm:pb-12 md:pb-16">
-              {/* NAME: Matches "Tim Cook" styling */}
-              <h1 className="text-4xl sm:text-5xl md:text-[48px] leading-[1.08333] font-semibold tracking-[-0.003em] text-apple-text mb-1 sm:mb-2 antialiased">
-                Zak Farnworth
-              </h1>
+                <div className="border-t border-apple-border pt-8 sm:pt-10 mb-8 sm:mb-12">
+                  <div className="grid grid-cols-1 md:grid-cols-12 md:gap-8 items-end">
+                    <div className="md:col-span-6 pb-8 sm:pb-12 md:pb-16">
+                      <h1 className="text-4xl sm:text-5xl md:text-[48px] leading-[1.08333] font-semibold tracking-[-0.003em] text-apple-text mb-1 sm:mb-2 antialiased">
+                        Zak Farnworth
+                      </h1>
 
-              {/* JOB TITLE: Matches "Chief Executive Officer" styling */}
-              <p className="text-xl sm:text-2xl md:text-[24px] leading-[1.16667] font-normal tracking-[0.009em] text-[#6e6e73] antialiased">
-                Workplace Engineer
-              </p>
-            </div>
+                      <p className="text-xl sm:text-2xl md:text-[24px] leading-[1.16667] font-normal tracking-[0.009em] text-[#6e6e73] antialiased">
+                        Workplace Engineer
+                      </p>
+                    </div>
 
-            <div className="md:col-span-6 flex justify-center md:justify-end items-end">
-              <div className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px] h-[220px] sm:h-[280px] md:h-[300px] flex items-end justify-center overflow-hidden">
-                <img
-                  src="https://downloads.farnworth.org.uk/images/Zak_F.png"
-                  alt="Zak Farnworth Portrait"
-                  className="block w-auto h-full max-h-[300px] object-contain object-bottom mix-blend-multiply"
-                />
+                    <div className="md:col-span-6 flex justify-center md:justify-end items-end">
+                      <div className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px] h-[220px] sm:h-[280px] md:h-[300px] flex items-end justify-center overflow-hidden">
+                        <img
+                          src="https://downloads.farnworth.org.uk/images/Zak_F.png"
+                          alt="Zak Farnworth Portrait"
+                          className="block w-auto h-full max-h-[300px] object-contain object-bottom mix-blend-multiply"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </section>
 
-    {/* WHITE BACKGROUND BIOGRAPHY BODY */}
-    <section className="bg-white pt-2 sm:pt-4">
-      <div className="max-w-[980px] mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-14 text-apple-text text-sm sm:text-base leading-relaxed">
-          <div className="space-y-5">
-            <p>
-              Zak Farnworth is Workplace Engineer at Capgemini, where
-              he focuses on the design, automation, and operational
-              deployment of modern Microsoft 365 cloud environments
-              and identity governance platforms.
-            </p>
+            <section className="bg-white pt-2 sm:pt-4">
+              <div className="max-w-[980px] mx-auto px-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-14 text-apple-text text-sm sm:text-base leading-relaxed">
+                  <div className="space-y-5">
+                    <p>
+                      Zak Farnworth is Workplace Engineer at Capgemini, where
+                      he focuses on the design, automation, and operational
+                      deployment of modern Microsoft 365 cloud environments
+                      and identity governance platforms.
+                    </p>
 
-            <p>
-              Prior to joining Capgemini, Zak held operational
-              technical roles, including a placement at The Quill,
-              driving infrastructure optimization, workflow
-              automation, and endpoint service delivery.
-            </p>
-          </div>
+                    <p>
+                      Prior to joining Capgemini, Zak held operational
+                      technical roles, including a placement at The Quill,
+                      driving infrastructure optimization, workflow
+                      automation, and endpoint service delivery.
+                    </p>
+                  </div>
 
-          <div className="space-y-5">
-            <p>
-              Zak specializes in federating cloud-only Microsoft 365
-              tenants with custom identity frameworks, utilizing Entra
-              ID, SCIM user provisioning, and Graph API baselines.
-            </p>
+                  <div className="space-y-5">
+                    <p>
+                      Zak specializes in federating cloud-only Microsoft 365
+                      tenants with custom identity frameworks, utilizing Entra
+                      ID, SCIM user provisioning, and Graph API baselines.
+                    </p>
 
-            <p>
-              He also maintains an active interest in hands-on system
-              engineering, managing home lab cluster architectures
-              powered by Proxmox, TrueNAS, and ZimaOS non-destructive
-              storage setups.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-)}
+                    <p>
+                      He also maintains an active interest in hands-on system
+                      engineering, managing home lab cluster architectures
+                      powered by Proxmox, TrueNAS, and ZimaOS non-destructive
+                      storage setups.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        )}
+
         {/* FOOTER */}
-        <footer className="bg-[#f5f5f7] border-t border-[#d2d2d7] text-[11px] text-[#86868b] py-8">
+        <footer className="bg-apple-bg border-t border-apple-border text-[11px] text-apple-subtext py-8">
           <div className="max-w-[1024px] mx-auto px-4 space-y-3">
             <p className="leading-relaxed">
               Designed with inspiration from Apple&apos;s executive profiles
               and developer portals.
             </p>
 
-            <div className="border-t border-[#d2d2d7] pt-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div className="border-t border-apple-border pt-4 flex flex-col sm:flex-row justify-between items-center gap-2">
               <div>
                 Copyright © {new Date().getFullYear()} Zak Farnworth. All
                 rights reserved.
