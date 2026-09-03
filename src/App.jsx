@@ -52,8 +52,8 @@ export default function App() {
     {
       role: "Workplace Engineer",
       company: "Capgemini",
-      period: "2026 — Present",
-      status: "Current Role",
+      period: "August 2026 — Present",
+      status: "Full Time",
       description:
         "Engineering enterprise workspace solutions, cloud identity alignment, and Microsoft 365 ecosystems.",
       highlights: [
@@ -63,15 +63,15 @@ export default function App() {
       ],
     },
     {
-      role: "Technical Specialist",
-      company: "The Quill",
-      period: "Prior — 2026",
-      status: "Previous Placement",
+      role: "Technical Systems Specialist",
+      company: "The Quill C of E Trust",
+      period: "December 2025 - August 2026",
+      status: "Full Time",
       description:
-        "Short-term technical role driving foundational IT operations and service delivery.",
+        "My role as Technical Systems Specialist comprised of management in ICT Infrastructure, Helpdesk, and the ICT Technicians.",
       highlights: [
-        "Infrastructure optimization and hands-on operational support",
-        "System documentation and workflow streamlining",
+        "Infrastructure design and support",
+        "System documentation and workflow streamlining, and automation design/implementation",
       ],
     },
   ];
@@ -506,7 +506,7 @@ export default function App() {
                     <div className="md:col-span-6 flex justify-center md:justify-end items-end">
                       <div className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px] h-[220px] sm:h-[280px] md:h-[300px] flex items-end justify-center overflow-hidden">
                         <img
-                          src="https://downloads.farnworth.org.uk/images/Zak_F.png"
+                          src="https://downloads.farnworth.org.uk/images/IMG_9871.png"
                           alt="Zak Farnworth Portrait"
                           className="block w-auto h-full max-h-[300px] object-contain object-bottom mix-blend-multiply"
                         />
