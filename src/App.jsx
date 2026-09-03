@@ -359,8 +359,7 @@ export default function App() {
                 </h2>
 
                 <p className="text-sm text-apple-subtext mt-2">
-                  Timeline of technical roles, responsibilities, and
-                  enterprise focus areas.
+                  Timeline of technical roles and responsibilities.
                 </p>
               </div>
 
