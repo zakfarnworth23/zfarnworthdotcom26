@@ -203,13 +203,6 @@ export default function App() {
               </button>
 
               <button
-                onClick={() => scrollToSection("experience")}
-                className="text-2xl font-semibold text-apple-text hover:text-gray-600 block w-full text-left pb-4 border-b border-gray-100"
-              >
-                Experience Tree
-              </button>
-
-              <button
                 onClick={() => scrollToSection("contact")}
                 className="text-2xl font-semibold text-apple-text hover:text-gray-600 block w-full text-left pb-4 border-b border-gray-100"
               >
@@ -218,7 +211,7 @@ export default function App() {
             </div>
 
             <div className="text-[11px] text-apple-subtext border-t border-gray-100 pt-4">
-              Zak Farnworth • Personal Workspace
+              Zak Farnworth • A personal website, built with React and Gemini
             </div>
           </div>
         </div>
