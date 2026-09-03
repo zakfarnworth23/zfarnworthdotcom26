@@ -522,32 +522,33 @@ export default function App() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-14 text-apple-text text-sm sm:text-base leading-relaxed">
                   <div className="space-y-5">
                     <p>
-                      Zak Farnworth is Workplace Engineer at Capgemini, where
-                      he focuses on the design, automation, and operational
-                      deployment of modern Microsoft 365 cloud environments
-                      and identity governance platforms.
+                    Zak Farnworth is Workplace Engineer at Capgemini, where
+                    he focuses on the support, design, implementation, and continuous
+                    improvement of services and functions within Microsoft 365 in
+                    medium to large environments on a global scale.
                     </p>
 
                     <p>
                       Prior to joining Capgemini, Zak held operational
-                      technical roles, including a placement at The Quill,
-                      driving infrastructure optimization, workflow
-                      automation, and endpoint service delivery.
+                      technical roles, including at The Quill C of E Trust,
+                      driving ICT Infrastructure, workflow
+                      automation, and endpoint service delivery using AD, Entra, Intune, Power Automate, and Azure Automation.
                     </p>
                   </div>
 
                   <div className="space-y-5">
                     <p>
-                      Zak specializes in federating cloud-only Microsoft 365
-                      tenants with custom identity frameworks, utilizing Entra
-                      ID, SCIM user provisioning, and Graph API baselines.
+                      Zak specializes in building low-code solutions and process 
+                      automations, leveraging Power Automate, Power Apps, and 
+                      Azure Automation to streamline enterprise workflows.
                     </p>
 
                     <p>
                       He also maintains an active interest in hands-on system
                       engineering, managing home lab cluster architectures
-                      powered by Proxmox, TrueNAS, and ZimaOS non-destructive
-                      storage setups.
+                      powered by Proxmox, TrueNAS, and ZimaOS to stay updated 
+                      and aware of emerging platforms and techniques in the 
+                      Enterprise world.
                     </p>
                   </div>
                 </div>
