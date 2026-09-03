@@ -247,7 +247,7 @@ export default function App() {
         <div className="bg-apple-darkBg text-xs text-[#a1a1a6] py-2.5">
           <div className="max-w-[1024px] mx-auto px-4 flex justify-between items-center">
             <span className="font-medium text-white">
-              Office of Zak Farnworth
+              The Official Portfolio
             </span>
             <div className="hidden sm:flex items-center gap-4">
               <a
