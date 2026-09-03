@@ -58,6 +58,9 @@ export default function App() {
         "3rd Line Workplace Engineer supporting client's Microsoft 365 platform, amongst other Enterprise solutions and systems.",
       highlights: [
         "Microsoft 365",
+        "Entra",
+        "Entra PIM",
+        "ServiceNow",
         "Windows Server 2016 - 2022",
         "Global Print Solutions",
         "Exchange Server & Online",
