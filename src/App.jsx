@@ -79,8 +79,8 @@ export default function App() {
         "Infrastructure design and support",
         "System documentation and workflow streamlining, and automation design/implementation",
         "Microsoft 365",
-        "Microsoft Azure"
-        "Windows Server 2022 - 2025"
+        "Microsoft Azure",
+        "Windows Server 2022 - 2025",
         "Google Workspace",
         "Apple School Manager",
         "iOS",
