@@ -95,7 +95,7 @@ export default function App() {
         "Configuration and support of Ruckus WiFi Estate within a Secondary school environment",
         "System documentation and workflow streamlining, and automation design/implementation"
       ],
-    },
+    }
   ];
 
   return (
