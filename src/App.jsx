@@ -55,11 +55,17 @@ export default function App() {
       period: "August 2026 — Present",
       status: "Full Time",
       description:
-        "Engineering enterprise workspace solutions, cloud identity alignment, and Microsoft 365 ecosystems.",
+        "3rd Line Workplace Engineer supporting client's Microsoft 365 platform, amongst other Enterprise solutions and systems.",
       highlights: [
-        "Microsoft 365 tenant design & cloud security baselines",
-        "Identity federation & automated SCIM user provisioning",
-        "Power Platform & operational efficiency tooling",
+        "Microsoft 365",
+        "Windows Server 2016 - 2022",
+        "Global Print Solutions",
+        "Exchange Server & Online",
+        "Intune - Windows, iOS, and Android",
+        "Genetic Security Systems",
+        "Power Automate",
+        "Power Apps",
+        "Azure Automation"
       ],
     },
     {
@@ -72,6 +78,20 @@ export default function App() {
       highlights: [
         "Infrastructure design and support",
         "System documentation and workflow streamlining, and automation design/implementation",
+        "Microsoft 365",
+        "Microsoft Azure"
+        "Windows Server 2022 - 2025"
+        "Google Workspace",
+        "Apple School Manager",
+        "iOS",
+        "Networks - Switching and Firewalls covering Sophos, FortiGate, and Watchguard",
+        "Endpoint Management - Setup, and re-development of Intune tenant, new Policies, and implementation of Microsoft Security Baselines",
+        "Security - Defender for Endpoint rollout as well as Sophos Endpoint working side-by-side",
+        "WiFi - Management of Aruba Central for our Wireless setup",
+        "PowerShell",
+        "Power Automate",
+        "Power Apps",
+        "Azure Automation"
       ],
     },
     {
