@@ -90,7 +90,7 @@ export default function App() {
         "Management of a very old Samsung OfficeServ VOIP Phone System",
         "Paxton Net2",
         "Watchguard Firewalls - Management and Support of these",
-        "Configuration and support of HPE / Aruba Network Switches"
+        "Configuration and support of HPE / Aruba Network Switches",
         "Configuration and support of Unifi WiFi Estate",
         "Configuration and support of Ruckus WiFi Estate within a Secondary school environment",
         "System documentation and workflow streamlining, and automation design/implementation"
