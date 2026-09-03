@@ -55,11 +55,17 @@ export default function App() {
       period: "August 2026 — Present",
       status: "Full Time",
       description:
-        "Engineering enterprise workspace solutions, cloud identity alignment, and Microsoft 365 ecosystems.",
+        "3rd Line Workplace Engineer supporting client's Microsoft 365 platform, amongst other Enterprise solutions and systems.",
       highlights: [
-        "Microsoft 365 tenant design & cloud security baselines",
-        "Identity federation & automated SCIM user provisioning",
-        "Power Platform & operational efficiency tooling",
+        "Microsoft 365",
+        "Windows Server 2016 - 2022",
+        "Global Print Solutions",
+        "Exchange Server & Online",
+        "Intune - Windows, iOS, and Android",
+        "Genetic Security Systems",
+        "Power Automate",
+        "Power Apps",
+        "Azure Automation"
       ],
     },
     {
@@ -72,6 +78,20 @@ export default function App() {
       highlights: [
         "Infrastructure design and support",
         "System documentation and workflow streamlining, and automation design/implementation",
+        "Microsoft 365",
+        "Microsoft Azure - Compute, VPN Gateways, and Networks implementation, and support",
+        "Windows Server 2022 - 2025",
+        "Google Workspace",
+        "Apple School Manager",
+        "iOS",
+        "Networks - Switching and Firewalls covering Sophos, FortiGate, and Watchguard",
+        "Endpoint Management - Setup, and re-development of Intune tenant, new Policies, and implementation of Microsoft Security Baselines",
+        "Security - Defender for Endpoint rollout as well as Sophos Endpoint working side-by-side",
+        "WiFi - Management of Aruba Central for our Wireless setup",
+        "PowerShell",
+        "Power Automate",
+        "Power Apps",
+        "Azure Automation"
       ],
     },
     {
@@ -83,6 +103,8 @@ export default function App() {
         "My role as ICT Technician comprised of working closely with the Network Manager in ICT Infrastructure, Helpdesk, and across multiple schools within our Trust.",
       highlights: [
         "Day to Day Helpdesk Responsibilities 1st & 2nd Line",
+        "Windows Server 2022",
+        "VMWare ESXI",
         "Many KFC's were enjoyed after a busy summer!",
         "Migration from SIMS.Net to Arbor",
         "Migration from Windows 10 to Windows 11",
@@ -203,13 +225,6 @@ export default function App() {
               </button>
 
               <button
-                onClick={() => scrollToSection("experience")}
-                className="text-2xl font-semibold text-apple-text hover:text-gray-600 block w-full text-left pb-4 border-b border-gray-100"
-              >
-                Experience Tree
-              </button>
-
-              <button
                 onClick={() => scrollToSection("contact")}
                 className="text-2xl font-semibold text-apple-text hover:text-gray-600 block w-full text-left pb-4 border-b border-gray-100"
               >
@@ -218,7 +233,7 @@ export default function App() {
             </div>
 
             <div className="text-[11px] text-apple-subtext border-t border-gray-100 pt-4">
-              Zak Farnworth • Personal Workspace
+              Zak Farnworth • A personal website, built with React and Gemini
             </div>
           </div>
         </div>
@@ -281,7 +296,7 @@ export default function App() {
                 </div>
 
                 <p className="text-base sm:text-lg text-apple-subtext max-w-[600px] mx-auto font-normal leading-relaxed mt-6">
-                  Experienced individual, primarily in Education, but now exploring the Enterprise world of Technology.
+                  Experienced individual, primarily having been in Education, but now in the Enterprise world of Technology.
                 </p>
               </div>
             </section>
@@ -419,7 +434,7 @@ export default function App() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <a
-                  href="mailto:zak@farnworth.org.uk"
+                  href="mailto:mailer@farnworth.org.uk"
                   className="group bg-white p-8 rounded-2xl border border-black/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all flex flex-col justify-between"
                   aria-label="Send an email to Zak Farnworth"
                 >
@@ -433,7 +448,7 @@ export default function App() {
                     </span>
 
                     <h3 className="text-base font-semibold text-apple-text group-hover:text-apple-blue transition-colors break-words">
-                      zak@farnworth.org.uk
+                      mailer@farnworth.org.uk
                     </h3>
                   </div>
 
@@ -559,7 +574,7 @@ export default function App() {
 
                   <div className="space-y-5">
                     <p>
-                      Zak specializes in building low-code solutions and process 
+                      Zak specialises in building low-code solutions and process 
                       automations, leveraging Power Automate, Power Apps, and 
                       Azure Automation to streamline enterprise workflows.
                     </p>
@@ -594,7 +609,7 @@ export default function App() {
 
               <div className="flex space-x-4 text-[#515154]">
                 <a
-                  href="mailto:zak@farnworth.org.uk"
+                  href="mailto:mailer@farnworth.org.uk"
                   className="hover:underline"
                 >
                   Email
@@ -603,7 +618,7 @@ export default function App() {
                 <span className="text-gray-300">|</span>
 
                 <a
-                  href="https://linkedin.com/in/zak-farnworth"
+                  href="https://linkedin.com/in/zakfarnworth"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:underline"
