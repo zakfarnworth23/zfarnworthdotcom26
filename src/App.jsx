@@ -233,7 +233,7 @@ export default function App() {
             </span>
             <div className="hidden sm:flex items-center gap-4">
               <a
-                href="https://linkedin.com/in/zak-farnworth"
+                href="https://linkedin.com/in/zakfarnworth"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-white transition-colors flex items-center gap-1"
@@ -444,7 +444,7 @@ export default function App() {
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/zak-farnworth"
+                  href="https://linkedin.com/in/zakfarnworth"
                   target="_blank"
                   rel="noreferrer"
                   className="group bg-white p-8 rounded-2xl border border-black/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all flex flex-col justify-between"
