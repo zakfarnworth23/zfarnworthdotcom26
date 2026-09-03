@@ -274,7 +274,7 @@ export default function App() {
                 </div>
 
                 <p className="text-base sm:text-lg text-apple-subtext max-w-[600px] mx-auto font-normal leading-relaxed mt-6">
-                  Experienced individual, primarily in Education, but now exploring the Enterprise world of Technology.
+                  Experienced individual, primarily having been in Education, but now in the Enterprise world of Technology.
                 </p>
               </div>
             </section>
@@ -412,7 +412,7 @@ export default function App() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <a
-                  href="mailto:zak@farnworth.org.uk"
+                  href="mailto:mailer@farnworth.org.uk"
                   className="group bg-white p-8 rounded-2xl border border-black/[0.08] shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all flex flex-col justify-between"
                   aria-label="Send an email to Zak Farnworth"
                 >
@@ -426,7 +426,7 @@ export default function App() {
                     </span>
 
                     <h3 className="text-base font-semibold text-apple-text group-hover:text-apple-blue transition-colors break-words">
-                      zak@farnworth.org.uk
+                      mailer@farnworth.org.uk
                     </h3>
                   </div>
 
@@ -552,7 +552,7 @@ export default function App() {
 
                   <div className="space-y-5">
                     <p>
-                      Zak specializes in building low-code solutions and process 
+                      Zak specialises in building low-code solutions and process 
                       automations, leveraging Power Automate, Power Apps, and 
                       Azure Automation to streamline enterprise workflows.
                     </p>
@@ -587,7 +587,7 @@ export default function App() {
 
               <div className="flex space-x-4 text-[#515154]">
                 <a
-                  href="mailto:zak@farnworth.org.uk"
+                  href="mailto:mailer@farnworth.org.uk"
                   className="hover:underline"
                 >
                   Email
@@ -596,7 +596,7 @@ export default function App() {
                 <span className="text-gray-300">|</span>
 
                 <a
-                  href="https://linkedin.com/in/zak-farnworth"
+                  href="https://linkedin.com/in/zakfarnworth"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:underline"
