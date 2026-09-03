@@ -74,6 +74,28 @@ export default function App() {
         "System documentation and workflow streamlining, and automation design/implementation",
       ],
     },
+    {
+      role: "ICT Technician",
+      company: "Albany Learning Trust",
+      period: "March - December 2025",
+      status: "Full Time",
+      description:
+        "My role as ICT Technician comprised of working closely with the Network Manager in ICT Infrastructure, Helpdesk, and across multiple schools within our Trust.",
+      highlights: [
+        "Day to Day Helpdesk Responsibilities 1st & 2nd Line",
+        "Many KFC's were enjoyed after a busy summer!",
+        "Migration from SIMS.Net to Arbor",
+        "Migration from Windows 10 to Windows 11",
+        "Management of Active Directory and Microsoft 365 Estate",
+        "Management of a very old Samsung OfficeServ VOIP Phone System",
+        "Paxton Net2",
+        "Watchguard Firewalls - Management and Support of these",
+        "Configuration and support of HPE / Aruba Network Switches"
+        "Configuration and support of Unifi WiFi Estate",
+        "Configuration and support of Ruckus WiFi Estate within a Secondary school environment",
+        "System documentation and workflow streamlining, and automation design/implementation"
+      ],
+    },
   ];
 
   return (
