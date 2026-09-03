@@ -79,7 +79,7 @@ export default function App() {
         "Infrastructure design and support",
         "System documentation and workflow streamlining, and automation design/implementation",
         "Microsoft 365",
-        "Microsoft Azure",
+        "Microsoft Azure - Compute, VPN Gateways, and Networks implementation, and support",
         "Windows Server 2022 - 2025",
         "Google Workspace",
         "Apple School Manager",
@@ -103,6 +103,8 @@ export default function App() {
         "My role as ICT Technician comprised of working closely with the Network Manager in ICT Infrastructure, Helpdesk, and across multiple schools within our Trust.",
       highlights: [
         "Day to Day Helpdesk Responsibilities 1st & 2nd Line",
+        "Windows Server 2022",
+        "VMWare ESXI",
         "Many KFC's were enjoyed after a busy summer!",
         "Migration from SIMS.Net to Arbor",
         "Migration from Windows 10 to Windows 11",
