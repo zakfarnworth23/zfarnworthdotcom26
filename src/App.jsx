@@ -241,7 +241,7 @@ export default function App() {
               {/* Foreground Hero Content */}
               <div className="relative z-10 max-w-[800px] mx-auto">
                 <p className="text-xs font-semibold tracking-[0.2em] text-apple-subtext uppercase mb-4">
-                  Systems &amp; Engineering Portal
+                  
                 </p>
 
                 <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mb-4">
@@ -259,8 +259,7 @@ export default function App() {
                 </div>
 
                 <p className="text-base sm:text-lg text-apple-subtext max-w-[600px] mx-auto font-normal leading-relaxed mt-6">
-                  Focused on modern cloud architecture, automated identity
-                  federation, and resilient homelab engineering.
+                  Experienced individual, primarily in Education, but now exploring the Enterprise world of Technology.
                 </p>
               </div>
             </section>
@@ -297,8 +296,8 @@ export default function App() {
                 <div className="md:col-span-5 flex justify-center md:justify-end">
                   <div className="w-full max-w-[280px] h-[340px] rounded-2xl overflow-hidden bg-gray-100 shadow-sm border border-black/5">
                     <img
-                      src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80"
-                      alt="Zak Farnworth Workspace"
+                      src="https://downloads.farnworth.org.uk/images/Zak_F.png"
+                      alt="Zak Farnworth"
                       className="w-full h-full object-cover"
                     />
                   </div>
