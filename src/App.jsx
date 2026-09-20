@@ -336,7 +336,7 @@ export default function App() {
                 <div className="md:col-span-5 flex justify-center md:justify-end">
                   <div className="w-full max-w-[280px] h-[340px] rounded-2xl overflow-hidden bg-gray-100 shadow-sm border border-black/5">
                     <img
-                      src="https://downloads.farnworth.org.uk/images/Zak_F.png"
+                      src="https://downloads.farnworth.org.uk/images/IMG_0100.jpg"
                       alt="Zak Farnworth"
                       className="w-full h-full object-cover"
                     />
@@ -544,7 +544,7 @@ export default function App() {
                     <div className="md:col-span-6 flex justify-center md:justify-end items-end">
                       <div className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px] h-[220px] sm:h-[280px] md:h-[300px] flex items-end justify-center overflow-hidden">
                         <img
-                          src="https://downloads.farnworth.org.uk/images/IMG_9871.png"
+                          src="https://downloads.farnworth.org.uk/images/IMG_0100.jpg"
                           alt="Zak Farnworth Portrait"
                           className="block w-auto h-full max-h-[300px] object-contain object-bottom mix-blend-multiply"
                         />
